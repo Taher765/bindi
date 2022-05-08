@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: 'Roboto',sans-serif;
+}
+p {
+  font-weight: 500;
+}
+.main-button {
+  color: var(--yellow-color);
+  padding: .5rem 1rem;
+  font-weight: bold;
+}
+.main-title:after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 140px
+}
+/* ----------- Strat Navbar ------- */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color) !important
+}
+.navbar .icon-search {
+  border-left: 1px solid var(--green-color) ;
+  color: var(--green-color);
+}
+/* ----------- End Navbar ------- */
+/* --------- Start Landing --------- */
+.landing {
+  min-height: calc(100vh - 72px);
+  background-color: var(--dark-color);
+}
+/* --------- End Landing --------- */
+/* -------- Strat services ------  */
+.services .info h4{
+  color: var(--yellow-color);
+}
+.services .icon-holder {
+  height: 200px;
+}
+.services .icon-holder i {
+  left: 50%;
+  transform: translatex(-50%);
+}
+.services .icon-holder .number{
+  color: var(--section-color);
+  font-size: 12rem;
+}
+.services .icon-holder .icon{
+  color: var(--green-color)
+}
+/* -------- End services ------  */
+/* ------------ Start Portofoli -----  */
+.portoflio {
+  background-color: var(--section-color);
+}
+.portoflio ul li.active,
+.portoflio ul li:hover {
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+.portoflio .image {
+  padding: 4px;
+  background-color: #fff;
+}
+.portoflio .image .info {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #ff3150b0;
+  padding-top: 10px;
+  transition: .3s;
+  color: #fff
+}
+.portoflio .image .info h4 {
+  font-size: .85rem;
+}
+.portoflio .image .info p {
+  font-size: .75rem;
+}
+.portoflio .image:hover .info {
+    transform: translate(-50%, -50%) scale(1);
+}
+.portoflio .image .info i {
+  color: var(--yellow-color);
+}
+/* ------------ End Portofoli -----  */
+/* ------------ Start About -----  */
+.about .main-title p {
+  max-width: 500px;
+}
+/* ------------ End About -----  */
+/* --------- Start My Team -----  */
+.team {
+  background-color: var(--section-color);
+}
+/* --------- End My Team -----  */
+/* ------------ Strat Project ------  */
+.project {
+  background-color: var(--dark-color);
+}
+/* ------------ End Project ------  */
+/* ----------- Start Subscribe ------  */
+.subscribe input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: .25rem 0.5rem;
+  font-size: 17px;
+}
+.subscribe input::placeholder {
+  color: #fff
+}
+.subscribe .main-button {
+  background-color: var(--dark-color);
+}
+.subscribe .main-button:hover {
+  color: var(--yellow-color);
+}
+/* ----------- End Subscribe ------  */
+/* ------- Start Footer ========== */
+footer {
+  background-color: var(--dark-color);
+}
+footer .icon-holder a {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+/* ------- End Footer ========== */
